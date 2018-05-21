@@ -1,0 +1,37 @@
+﻿ <form action="lr5.php" method="GET" id="zakaz"> 
+ <a href="#">English</a>  <a href="#">По русски</a>
+ <h1>Выберите и закажите наш товар!</h1>
+ <h3>Выберите интересующие Вас товары</h3>
+ 
+ <select type="select" multiple id="goodsList" name="goodsList[]" >
+ <option value="chess" selected="selected">Шахматы</option>
+ <option value="checkers ">Шашки</option>
+ <option value="blackgammons">Нарды</option>
+</select>
+
+<h3>Язык интерфейса</h3>
+<select type="select" id="lang" name="lang" >
+ <option value="russia" selected="selected">Русский</option>
+ <option value="english ">English</option>
+
+</select>
+
+ <h3>Ваш e-mail<sup><font color="red">*</font></sup></h3> 
+<input type="text" maxlength="20" name="eMail" required="required"/>
+<h3>Ваш пароль<sup><font color="red">*</font></sup></h3> 
+<input type="password" maxlength="8" name="pass">
+<br/>
+<br/>
+<button>Заказать</button>
+<hr/>
+<h3>Дополнительно</h3>
+<input type="checkbox" name="addChksArr[]" value="su1" checked >Подписаться на новости сайта.<br />
+<input type="checkbox" name="addChksArr[]" value="su2" >Получать персональные сообщения на e-mail.<br />
+<input type="checkbox" name="addChksArr[]" value="su3" checked>Подписаться на рекламу от наших спонсоров.<br />
+
+<input type="hidden" name="uID" value="124578" />
+<input type="hidden" name="queryDate"/>
+<body bgcolor="white">
+ 
+ 
+ </form>
